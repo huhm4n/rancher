@@ -1,7 +1,7 @@
 # encoding: UTF-8
 Vagrant.configure("2") do |config|
 
-#speficy the base box
+#speficy the base box **replace** 192.168.0.50 with your static ip
 config.vm.box = "centos/7"
 config.vm.network :public_network, ip: "192.168.0.50"
 	config.vm.provision"shell" do |s|
